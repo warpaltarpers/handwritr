@@ -22,7 +22,7 @@
           <label for="textinput">Input your text below</label>
           <textarea class="form-control" id="textinput" rows="3"></textarea>
         </div>
-        <button type="button" class="btn btn-outline-primary float-right" id="submit">Submit</button>
+        <button type="button" class="btn btn-outline-primary float-right" id="submit">Generate</button>
       </form>
     </div>
     <div class="container output">
@@ -30,15 +30,16 @@
         var input = "";
         var ouput = "";
         var inputarr = [];
+        // Array of fonts for span
         var fontarr = ["font-family: MaxHand1, sans-serif", "font-family: MaxHand2, sans-serif", "font-family: MaxHand3, sans-serif"];
-        if document.getElementById('submit').clicked == true {
-          input = document.getElementById('textinput');
-          inputarr = input.split("");
+        if document.getElementById('submit').clicked == true { // If button is clicked
+          input = document.getElementById('textinput'); // Set 'input' string to what was in the text area
+          inputarr = input.split(""); // Create an array of letters from input
           for (i = 0; i < inputarr.length; i++) {
-            fontchange = fontarr[Math.floor((Math.random() * 3) + 1)];
-            output = (output + "<span style=\"" + fontchange + "\">" + inputarr[i] + "</span>");
+            fontchange = fontarr[Math.floor((Math.random() * 3) + 1)]; // Choose a random font
+            output = (output + "<span style=\"" + fontchange + "\">" + inputarr[i] + "</span>"); // Add <span style="[fontchange]">inputarr[i]</span> to output string
           }
-          document.getElementById(textoutput) = output;
+          document.getElementById(textoutput) = output; // Output string to line 45
         }
       </script>
       <p id="textoutput"></p>
