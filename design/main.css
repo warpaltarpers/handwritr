@@ -4,6 +4,37 @@ font-family: 'Berkshire Swash', cursive;
 font-family: 'Raleway', sans-serif;
 */
 
+/*
+ADDING HANDWRITTEN FONTS
+*/
+
+@font-face {
+  font-family: 'MaxHand1';
+  src: url('fonts/MaxHand1.ttf') format('ttf'),
+       url('fonts/MaxHand1.woff2') format('woff2'),
+       url('fonts/MaxHand1.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaxHand2';
+  src: url('fonts/MaxHand3.ttf') format('ttf'),
+       url('fonts/MaxHand2.woff2') format('woff2'),
+       url('fonts/MaxHand2.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaxHand3';
+  src: url('fonts/MaxHand3.ttf') format('ttf'),
+       url('fonts/MaxHand3.woff2') format('woff2'),
+       url('fonts/MaxHand3.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .jumbotron {
   background-color: #7fdbff;
 }
