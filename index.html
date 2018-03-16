@@ -26,7 +26,7 @@
       </form>
     </div>
     <div class="container output">
-      <script>
+      <script> // Help from yajiv on StackOverflow
         var input = "";
         var ouput = "";
         var fontarr = ["font-family: MaxHand1, sans-serif",
@@ -38,7 +38,7 @@
 
           input = document.getElementById('textinput').value;
           for (i = 0; i < input.length; i++) {
-              fontchange = fontarr[Math.floor((Math.random() * 3) + 1)];
+              fontchange = fontarr[Math.floor((Math.random() * 2) + 1)];
               output += "<span style=\"" + fontchange + "\">" + input[i] + "</span>";
           }
           document.getElementById("textoutput").innerHTML = output;
