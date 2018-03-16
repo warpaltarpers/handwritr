@@ -22,11 +22,29 @@
           <label for="textinput">Input your text below</label>
           <textarea class="form-control" id="textinput" rows="3"></textarea>
         </div>
-        <button type="button" class="btn btn-outline-primary float-right">Submit</button>
+        <button type="button" class="btn btn-outline-primary float-right" id="submit" onclick="change()">Generate</button>
       </form>
     </div>
     <div class="container output">
-      <p></p>
+      <script> // Help from yajiv on StackOverflow
+        var input = "";
+        var ouput = "";
+        var fontarr = ["font-family: MaxHand1, sans-serif",
+                       "font-family: MaxHand2, sans-serif",
+                       "font-family: MaxHand3, sans-serif"];
+        function change(){
+          var input = "";
+          var output = "";
+
+          input = document.getElementById('textinput').value;
+          for (i = 0; i < input.length; i++) {
+            fontchange = fontarr[Math.floor((Math.random() * 2) + 1)];
+            output += "<span style=\"" + fontchange + "\">" + input[i] + "</span>";
+          }
+          document.getElementById("textoutput").innerHTML = output;
+        }
+      </script>
+      <p id="textoutput"></p>
     </div>
   </body>
 </hmtl>
