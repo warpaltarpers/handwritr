@@ -38,8 +38,8 @@
 
           input = document.getElementById('textinput').value;
           for (i = 0; i < input.length; i++) {
-              fontchange = fontarr[Math.floor((Math.random() * 2) + 1)];
-              output += "<span style=\"" + fontchange + "\">" + input[i] + "</span>";
+            fontchange = fontarr[Math.floor((Math.random() * 2) + 1)];
+            output += "<span style=\"" + fontchange + "\">" + input[i] + "</span>";
           }
           document.getElementById("textoutput").innerHTML = output;
         }
