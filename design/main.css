@@ -22,6 +22,22 @@ font-family: 'Raleway', sans-serif;
   text-align: center;
 }
 
+.jumbotron h4 a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1vw;
+  color: #001f3f;
+  text-align: center;
+}
+
+.jumbotron h4 a:hover {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1vw;
+  color: #001f3f;
+  text-align: center;
+  font-style: italic;
+  text-decoration: none;
+}
+
 .main-form {
   padding: 20px 0px 20px 0px;
 }
