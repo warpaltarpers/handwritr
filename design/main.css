@@ -1,0 +1,24 @@
+/*
+HOW TO ADD BERKSHIRE SWASH AND RALEWAY
+font-family: 'Berkshire Swash', cursive;
+font-family: 'Raleway', sans-serif;
+*/
+
+.jumbotron {
+  background-color: #7fdbff;
+}
+
+.jumbotron h1 {
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 5vw;
+  color: #001f3f;
+  text-align: center;
+}
+
+.main-form {
+  padding: 20px 0px 20px 0px;
+}
+
+.output {
+  padding: 20px 0px 10px 0px;
+}
